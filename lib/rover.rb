@@ -34,6 +34,16 @@ class Rover
       else
         @position[2] = "N"
       end
+    else
+      if @position[2] =="N"
+        @position[2] = "W"
+      elsif @position[2]  =="S"
+        @position[2] = "E"
+      elsif @position == "E"
+        @position[2] = "N"
+      else
+        @position[2] = "S"
+      end
     end
     @position
   end

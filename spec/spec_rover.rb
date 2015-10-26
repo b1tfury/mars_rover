@@ -22,4 +22,8 @@ describe Rover,"#move" do
   it "should turn right if R is provided" do
     expect(Rover.new([1,2,"N"]).move("R")).to eq([1,2,"E"])
   end
+
+  it"should turn left if L is provided" do
+    expect(Rover.new([1,2,"N"]).move("L")).to eq([1,2,"W"])
+  end
 end
