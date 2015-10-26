@@ -15,8 +15,8 @@ describe Rover,"#move" do
   it "should raise error if no command is given" do
     expect{Rover.new([1,2,"N"]).move}.to raise_error(RuntimeError,"no command given")
   end
-#  it "should move foreward " do
-#    rov = Rover.new([1,2,"N"])
-#    expect(rov.move("M")).to match_array([1,3,"N"])
-#  end
+  it "should move foreward " do
+    rov = Rover.new([1,2,"N"])
+    expect(rov.move("M")).to match_array([1,3,"N"])
+  end
 end
