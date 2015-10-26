@@ -19,4 +19,7 @@ describe Rover,"#move" do
     rov = Rover.new([1,2,"N"])
     expect(rov.move("M")).to match_array([1,3,"N"])
   end
+  it "should turn right if R is provided" do
+    expect(Rover.new([1,2,"N"]).move("R")).to eq([1,2,"E"])
+  end
 end
