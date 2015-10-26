@@ -10,4 +10,10 @@ class Rover
       @position
     end
   end
+
+  def move(command= nil)
+    if command == nil
+      raise "no command given"
+    end
+  end
 end
