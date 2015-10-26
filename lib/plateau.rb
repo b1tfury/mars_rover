@@ -4,6 +4,10 @@ class Plateau
     @limits = limits
   end
   def limits
-    @limits
+    if @limits == nil
+      raise "upper limits are not given for plateau"
+    else
+      @limits
+    end
   end
 end
